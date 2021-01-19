@@ -10,6 +10,8 @@
 #import "TestCaptureViewController.h"
 #import "TestReSizeImageViewController.h"
 #import "TestCovertImageToBufferViewController.h"
+#import "WebRTCViewController.h"
+#import "ShareGoogleDriveWithWetherManViewController.h"
 
 @interface ViewController ()
 
@@ -44,9 +46,18 @@
     
     UIButton *convertImageToBufferButton = [self createButtonWith:@"Convert Image To Pixel Buffer" action:@selector(convertImageToBufferAction:)];
     
+    UIButton *oepButton = [self createButtonWith:@"OEP" action:@selector(oepAction:)];
+    
+    UIButton *webRTCButton = [self createButtonWith:@"WebRTC Capture" action:@selector(webRTCCaptureAction:)];
+    
+    UIButton *googleWeatherManButton = [self createButtonWith:@"Share Google Drive WeatherMan" action:@selector(googleWeatherManAction:)];
+    
     [stackView addArrangedSubview:captureWKWebViewContentButton];
     [stackView addArrangedSubview:reSizeImageButton];
     [stackView addArrangedSubview:convertImageToBufferButton];
+    [stackView addArrangedSubview:oepButton];
+    [stackView addArrangedSubview:webRTCButton];
+    [stackView addArrangedSubview:googleWeatherManButton];
 }
 
 - (UIButton *) createButtonWith: (NSString *)title action:(SEL)action {
@@ -78,6 +89,21 @@
 
 - (void) convertImageToBufferAction: (UIButton *)sender {
     TestCovertImageToBufferViewController *viewController = [[TestCovertImageToBufferViewController alloc] init];
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
+- (void) oepAction: (UIButton *)sender {
+    OEPViewController *viewController = [[OEPViewController alloc] init];
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
+- (void) webRTCCaptureAction: (UIButton *)sender {
+    WebRTCViewController *viewController = [[WebRTCViewController alloc] init];
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
+- (void) googleWeatherManAction: (UIButton *)sender {
+    ShareGoogleDriveWithWetherManViewController *viewController = [[ShareGoogleDriveWithWetherManViewController alloc] init];
     [self presentViewController:viewController animated:YES completion:nil];
 }
 

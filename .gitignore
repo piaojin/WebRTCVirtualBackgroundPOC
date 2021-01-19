@@ -1,0 +1,30 @@
+# Mac OS X
+.DS_Store
+external/.DS_Store
+
+# Xcode
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcuserstate
+*.xccheckout
+*.hmap
+*.xcworkspace
+!default.xcworkspace
+xcuserdata/
+Glip/Pods/
+# Generated files
+*.pyc
+Glip/libs/
+Pods/
+.package.json
+# Backup files
+*~.nib
+*.idea*
+Glip/LocalizationTools/LocalizedV3/Export
+Glip/LocalizationTools/LocalizedV3/Import

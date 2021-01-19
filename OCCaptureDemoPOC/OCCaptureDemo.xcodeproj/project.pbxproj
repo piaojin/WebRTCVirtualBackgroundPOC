@@ -34,7 +34,14 @@
 		43ACB1162588DB8C0074C5DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACB1152588DB8C0074C5DF /* main.m */; };
 		43ACB1202588DB8C0074C5DF /* OCCaptureDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACB11F2588DB8C0074C5DF /* OCCaptureDemoTests.m */; };
 		43ACB12B2588DB8C0074C5DF /* OCCaptureDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACB12A2588DB8C0074C5DF /* OCCaptureDemoUITests.m */; };
+		43C4835B25B6B2D900139837 /* POCDefaultShader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43C4834F25B6B2D900139837 /* POCDefaultShader.mm */; };
+		43C4835C25B6B2D900139837 /* RCVAIForwardVideoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C4835025B6B2D900139837 /* RCVAIForwardVideoSource.m */; };
+		43C4835D25B6B2D900139837 /* POCEAGLVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C4835225B6B2D900139837 /* POCEAGLVideoView.m */; };
+		43C4835E25B6B2D900139837 /* POCNV12TextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C4835325B6B2D900139837 /* POCNV12TextureCache.m */; };
+		43C4835F25B6B2D900139837 /* RCVProcessBufferManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C4835925B6B2D900139837 /* RCVProcessBufferManager.m */; };
+		43C4836425B6B65900139837 /* RTCDisplayLinkTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C4836325B6B65900139837 /* RTCDisplayLinkTimer.m */; };
 		43DE710125B572F60029E379 /* MergeBufferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DE710025B572F60029E379 /* MergeBufferViewController.swift */; };
+		43DE711A25B69F6F0029E379 /* ShareGoogleDriveWithWetherManViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DE711925B69F6F0029E379 /* ShareGoogleDriveWithWetherManViewController.m */; };
 		65BD16FC4D37BF5373EF9C70 /* Pods_OCCaptureDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F3DD6FEACCB62C3F5BBF9C /* Pods_OCCaptureDemo.framework */; };
 		A7862054E66971EEB9F2E3F4 /* Pods_OCCaptureDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB34DA086EEB18CA05DE3B76 /* Pods_OCCaptureDemoUITests.framework */; };
 		C02F23ED0E42AB5106E3B656 /* Pods_OCCaptureDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5C2A1AB8600171E40873DF /* Pods_OCCaptureDemoTests.framework */; };
@@ -115,7 +122,25 @@
 		43ACB12A2588DB8C0074C5DF /* OCCaptureDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCaptureDemoUITests.m; sourceTree = "<group>"; };
 		43ACB12C2588DB8C0074C5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43ACB14F2588E3AE0074C5DF /* BanubaEffectPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BanubaEffectPlayer.framework; sourceTree = "<group>"; };
+		43C4834F25B6B2D900139837 /* POCDefaultShader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POCDefaultShader.mm; sourceTree = "<group>"; };
+		43C4835025B6B2D900139837 /* RCVAIForwardVideoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCVAIForwardVideoSource.m; sourceTree = "<group>"; };
+		43C4835125B6B2D900139837 /* RCVProcessPixelBufferProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCVProcessPixelBufferProtocol.h; sourceTree = "<group>"; };
+		43C4835225B6B2D900139837 /* POCEAGLVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POCEAGLVideoView.m; sourceTree = "<group>"; };
+		43C4835325B6B2D900139837 /* POCNV12TextureCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POCNV12TextureCache.m; sourceTree = "<group>"; };
+		43C4835425B6B2D900139837 /* POCEAGLVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POCEAGLVideoView.h; sourceTree = "<group>"; };
+		43C4835525B6B2D900139837 /* POCDefaultShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POCDefaultShader.h; sourceTree = "<group>"; };
+		43C4835625B6B2D900139837 /* RCVAIForwardVideoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCVAIForwardVideoSource.h; sourceTree = "<group>"; };
+		43C4835725B6B2D900139837 /* POCNV12TextureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POCNV12TextureCache.h; sourceTree = "<group>"; };
+		43C4835825B6B2D900139837 /* POCVideoViewShading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POCVideoViewShading.h; sourceTree = "<group>"; };
+		43C4835925B6B2D900139837 /* RCVProcessBufferManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCVProcessBufferManager.m; sourceTree = "<group>"; };
+		43C4835A25B6B2D900139837 /* RCVProcessBufferManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCVProcessBufferManager.h; sourceTree = "<group>"; };
+		43C4836225B6B65900139837 /* RTCDisplayLinkTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCDisplayLinkTimer.h; sourceTree = "<group>"; };
+		43C4836325B6B65900139837 /* RTCDisplayLinkTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCDisplayLinkTimer.m; sourceTree = "<group>"; };
+		43C4837325B6C21500139837 /* RTCOpenGLDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCOpenGLDefines.h; sourceTree = "<group>"; };
+		43C4837425B6C22500139837 /* RTCShader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCShader.h; sourceTree = "<group>"; };
 		43DE710025B572F60029E379 /* MergeBufferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeBufferViewController.swift; sourceTree = "<group>"; };
+		43DE711825B69F6F0029E379 /* ShareGoogleDriveWithWetherManViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareGoogleDriveWithWetherManViewController.h; sourceTree = "<group>"; };
+		43DE711925B69F6F0029E379 /* ShareGoogleDriveWithWetherManViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareGoogleDriveWithWetherManViewController.m; sourceTree = "<group>"; };
 		6710644B6F88B55B7BF33A43 /* Pods-OCCaptureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCaptureDemo.release.xcconfig"; path = "Target Support Files/Pods-OCCaptureDemo/Pods-OCCaptureDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6E940F26E34F0078030D2517 /* Pods-OCCaptureDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCaptureDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-OCCaptureDemoTests/Pods-OCCaptureDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FD7FE8BC60DD2241E6D99F8 /* Pods-OCCaptureDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCaptureDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-OCCaptureDemoUITests/Pods-OCCaptureDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +221,7 @@
 		43ACB1022588DB890074C5DF /* OCCaptureDemo */ = {
 			isa = PBXGroup;
 			children = (
+				43C4834E25B6B2AF00139837 /* WebRTC */,
 				4378AF2A25A58952006991F2 /* SceneDelegate.h */,
 				4378AF2925A58952006991F2 /* SceneDelegate.m */,
 				43ACB1032588DB890074C5DF /* AppDelegate.h */,
@@ -213,8 +239,6 @@
 				433BA7C8259B117A0078212E /* OCCaptureDemo-Bridging-Header.h */,
 				433BA7C9259B117A0078212E /* OCCaptureDemoTests-Bridging-Header.h */,
 				433BA7CA259B117A0078212E /* OCCaptureDemoUITests-Bridging-Header.h */,
-				433BA9DF259C08F60078212E /* WebRTCViewController.h */,
-				433BA9E0259C08F60078212E /* WebRTCViewController.m */,
 				4378AF2225A58366006991F2 /* RcvCVPixelBufferUtils.h */,
 				4378AF2325A58366006991F2 /* RcvCVPixelBufferUtils.m */,
 				431F4E5225AC385F0018B9EE /* ReSizeImageHelper.swift */,
@@ -227,6 +251,8 @@
 				431F4E6325AC8D060018B9EE /* TestCovertImageToBufferViewController.h */,
 				431F4E6425AC8D060018B9EE /* TestCovertImageToBufferViewController.m */,
 				43DE710025B572F60029E379 /* MergeBufferViewController.swift */,
+				43DE711825B69F6F0029E379 /* ShareGoogleDriveWithWetherManViewController.h */,
+				43DE711925B69F6F0029E379 /* ShareGoogleDriveWithWetherManViewController.m */,
 			);
 			path = OCCaptureDemo;
 			sourceTree = "<group>";
@@ -259,6 +285,31 @@
 				CB34DA086EEB18CA05DE3B76 /* Pods_OCCaptureDemoUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43C4834E25B6B2AF00139837 /* WebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				43C4835525B6B2D900139837 /* POCDefaultShader.h */,
+				43C4834F25B6B2D900139837 /* POCDefaultShader.mm */,
+				43C4835425B6B2D900139837 /* POCEAGLVideoView.h */,
+				43C4835225B6B2D900139837 /* POCEAGLVideoView.m */,
+				43C4835725B6B2D900139837 /* POCNV12TextureCache.h */,
+				43C4835325B6B2D900139837 /* POCNV12TextureCache.m */,
+				43C4835825B6B2D900139837 /* POCVideoViewShading.h */,
+				43C4835625B6B2D900139837 /* RCVAIForwardVideoSource.h */,
+				43C4835025B6B2D900139837 /* RCVAIForwardVideoSource.m */,
+				43C4835A25B6B2D900139837 /* RCVProcessBufferManager.h */,
+				43C4835925B6B2D900139837 /* RCVProcessBufferManager.m */,
+				43C4835125B6B2D900139837 /* RCVProcessPixelBufferProtocol.h */,
+				433BA9DF259C08F60078212E /* WebRTCViewController.h */,
+				433BA9E0259C08F60078212E /* WebRTCViewController.m */,
+				43C4836225B6B65900139837 /* RTCDisplayLinkTimer.h */,
+				43C4836325B6B65900139837 /* RTCDisplayLinkTimer.m */,
+				43C4837325B6C21500139837 /* RTCOpenGLDefines.h */,
+				43C4837425B6C22500139837 /* RTCShader.h */,
+			);
+			path = WebRTC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,16 +540,23 @@
 			files = (
 				43ACB10B2588DB890074C5DF /* ViewController.m in Sources */,
 				431F4E5F25AC8CB20018B9EE /* TestCaptureViewController.m in Sources */,
+				43C4836425B6B65900139837 /* RTCDisplayLinkTimer.m in Sources */,
 				431F4E6225AC8CE50018B9EE /* TestReSizeImageViewController.m in Sources */,
 				433BA9E1259C08F60078212E /* WebRTCViewController.m in Sources */,
 				43ACB1052588DB890074C5DF /* AppDelegate.m in Sources */,
 				4378AF2B25A58952006991F2 /* SceneDelegate.m in Sources */,
+				43C4835C25B6B2D900139837 /* RCVAIForwardVideoSource.m in Sources */,
 				433BA3A4259AF9CE0078212E /* OEPViewController.m in Sources */,
+				43DE711A25B69F6F0029E379 /* ShareGoogleDriveWithWetherManViewController.m in Sources */,
 				43ACB1162588DB8C0074C5DF /* main.m in Sources */,
+				43C4835B25B6B2D900139837 /* POCDefaultShader.mm in Sources */,
 				431F4E5325AC385F0018B9EE /* ReSizeImageHelper.swift in Sources */,
 				431F4E5C25AC8C340018B9EE /* CaptureViewHelper.m in Sources */,
 				431F4E6525AC8D060018B9EE /* TestCovertImageToBufferViewController.m in Sources */,
+				43C4835D25B6B2D900139837 /* POCEAGLVideoView.m in Sources */,
+				43C4835F25B6B2D900139837 /* RCVProcessBufferManager.m in Sources */,
 				43DE710125B572F60029E379 /* MergeBufferViewController.swift in Sources */,
+				43C4835E25B6B2D900139837 /* POCNV12TextureCache.m in Sources */,
 				4378AF2425A58366006991F2 /* RcvCVPixelBufferUtils.m in Sources */,
 				433BA7CC259B117A0078212E /* ImageHelper.swift in Sources */,
 			);

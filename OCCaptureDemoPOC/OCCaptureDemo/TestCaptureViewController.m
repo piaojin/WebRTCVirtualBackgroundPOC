@@ -61,6 +61,27 @@
     
     UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:(UIBarButtonItemStyleDone) target:self action:@selector(backAction)];
     self.navigationItem.leftBarButtonItem = leftBarButtonItem;
+    
+    
+//    UIView *tempView = [[UIView alloc] initWithFrame:CGRectZero];
+//    tempView.layer.backgroundColor = UIColor.blueColor.CGColor;
+//    [tempView setTranslatesAutoresizingMaskIntoConstraints:NO];
+//    [[tempView.widthAnchor constraintEqualToConstant:70] setActive:YES];
+//    [[tempView.heightAnchor constraintEqualToConstant:70] setActive:YES];
+//
+//    [self.wkWebView addSubview:tempView];
+//    [[tempView.centerYAnchor constraintEqualToAnchor:self.wkWebView.centerYAnchor] setActive:YES];
+//    [[tempView.centerXAnchor constraintEqualToAnchor:self.wkWebView.centerXAnchor] setActive:YES];
+    
+//    self.imageView.layer.backgroundColor = UIColor.blueColor.CGColor;
+    self.imageView.image = [UIImage imageNamed:@"transparent-background"];
+    [self.imageView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [[self.imageView.widthAnchor constraintEqualToConstant:70] setActive:YES];
+    [[self.imageView.heightAnchor constraintEqualToConstant:70] setActive:YES];
+    
+    [self.wkWebView addSubview:self.imageView];
+    [[self.imageView.centerYAnchor constraintEqualToAnchor:self.wkWebView.centerYAnchor] setActive:YES];
+    [[self.imageView.centerXAnchor constraintEqualToAnchor:self.wkWebView.centerXAnchor] setActive:YES];
 }
 
 - (void)displayDidRefresh:(CADisplayLink *)displayLink {

@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-OCCaptureDemo/Pods-OCCaptureDemo-frameworks.sh
 ${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework
+${BUILT_PRODUCTS_DIR}/abseil/absl.framework
