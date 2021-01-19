@@ -1,0 +1,532 @@
+{
+  "layer_shapes" : {
+    "activation_11_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "add_11_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "batch_normalization_2_output_intermin_" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "batch_normalization_5_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "activation_12_output" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "batch_normalization_12_output_intermin_" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "batch_normalization_9_output_intermin_" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "activation_3_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "activation_6_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "activation_13_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "batch_normalization_18_output_intermin_" : {
+      "k" : 8,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "add_16_output" : {
+      "k" : 8,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "activation_14_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "activation_16_output" : {
+      "k" : 32,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "separable_conv2d_18_output_intermin_" : {
+      "k" : 8,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "activation_15_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "activation_9_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "activation_17_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "conv2d_3_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "up_sampling2d_3_output" : {
+      "k" : 8,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "add_10_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "batch_normalization_7_output_intermin_" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "add_13_output" : {
+      "k" : 32,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "batch_normalization_5_output_intermin_" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "activation_18_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "batch_normalization_4_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "max_pooling2d_1_output" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "batch_normalization_10_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "batch_normalization_10_output_intermin_" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "add_9_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "activation_19_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "conv2d_8_output" : {
+      "k" : 1,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "batch_normalization_7_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "batch_normalization_13_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "batch_normalization_11_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "add_5_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "add_6_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "batch_normalization_3_output_intermin_" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "add_7_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "activation_2_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "add_8_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "activation_8_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "batch_normalization_14_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "activation_5_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "activation_20_output" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "batch_normalization_16_output_intermin_" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "add_2_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "batch_normalization_19_output_intermin_" : {
+      "k" : 8,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "add_3_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "batch_normalization_15_output" : {
+      "k" : 32,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "add_4_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "batch_normalization_19_output" : {
+      "k" : 8,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "add_12_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "add_15_output" : {
+      "k" : 8,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "batch_normalization_17_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "conv2d_2_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "activation_21_output" : {
+      "k" : 8,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "batch_normalization_3_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "output1" : {
+      "k" : 1,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "batch_normalization_9_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "activation_22_output" : {
+      "k" : 8,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "add_1_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "batch_normalization_11_output_intermin_" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "max_pooling2d_2_output" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "separable_conv2d_17_output_intermin_" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "batch_normalization_6_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "activation_23_output" : {
+      "k" : 8,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "separable_conv2d_12_output_intermin_" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "activation_4_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "conv2d_7_output" : {
+      "k" : 8,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "up_sampling2d_1_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "activation_1_output" : {
+      "k" : 8,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "batch_normalization_8_output_intermin_" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "input1" : {
+      "k" : 4,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "batch_normalization_6_output_intermin_" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "activation_24_output" : {
+      "k" : 8,
+      "w" : 128,
+      "n" : 1,
+      "h" : 72
+    },
+    "separable_conv2d_14_output_intermin_" : {
+      "k" : 32,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "batch_normalization_14_output_intermin_" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "batch_normalization_4_output_intermin_" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "h" : 18
+    },
+    "batch_normalization_17_output_intermin_" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "max_pooling2d_3_output" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "activation_7_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "add_14_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "conv2d_4_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "activation_10_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    },
+    "up_sampling2d_2_output" : {
+      "k" : 32,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "batch_normalization_2_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 36
+    },
+    "batch_normalization_8_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 9
+    }
+  }
+}

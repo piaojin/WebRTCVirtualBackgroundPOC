@@ -1,0 +1,27 @@
+passes = [ "df_blur_down1.toml","df_blur_down2.toml","df_blur_down3.toml","df_blur_up3.toml","df_blur_up2.toml","df_blur_up1.toml"]
+
+draw_order = ["TriMBG","TriBlr"]
+
+# Background separation
+[materials.TriMBG]
+vs = "bg.vert" 
+fs = "bg.frag"
+blend = "alpha"
+backfaces = false
+colorwrite = true
+shadow = false
+zwrite = false
+ztest = false
+samplers = {bgTex = 0}
+
+# Blur backgroung effect
+[materials.TriBlr]
+vs = "bg_blur.vert"
+fs = "bg_blur.frag"
+blend = "alpha" # "alpha", "premul_alpha", "screen", "add", "multiply"
+backfaces = true
+colorwrite = true
+zwrite = false
+ztest = false
+shadow = false
+samplers = {}

@@ -1,0 +1,6 @@
+framework module Pods_OCCaptureDemoTests {
+  umbrella header "Pods-OCCaptureDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
