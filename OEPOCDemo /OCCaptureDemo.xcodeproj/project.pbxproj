@@ -1,0 +1,952 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31B78F987BF2711017B7DCD9 /* Pods_OCCaptureDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9A7F59DC3377F70EF9EB14 /* Pods_OCCaptureDemoUITests.framework */; };
+		433BA7AA259B0FD20078212E /* effects in Resources */ = {isa = PBXBuildFile; fileRef = 433BA7A9259B0FD20078212E /* effects */; };
+		433BA7AB259B0FD20078212E /* effects in Resources */ = {isa = PBXBuildFile; fileRef = 433BA7A9259B0FD20078212E /* effects */; };
+		433BA7AC259B0FD20078212E /* effects in Resources */ = {isa = PBXBuildFile; fileRef = 433BA7A9259B0FD20078212E /* effects */; };
+		433BA7BB259B10250078212E /* BanubaEffectPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433BA7B9259B10250078212E /* BanubaEffectPlayer.framework */; };
+		433BA7BC259B10250078212E /* BanubaEffectPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433BA7B9259B10250078212E /* BanubaEffectPlayer.framework */; };
+		433BA7C3259B10370078212E /* BanubaEffectPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433BA7B9259B10250078212E /* BanubaEffectPlayer.framework */; };
+		433BA7C4259B10370078212E /* BanubaEffectPlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 433BA7B9259B10250078212E /* BanubaEffectPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		433BA9E1259C08F60078212E /* WebRTCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433BA9E0259C08F60078212E /* WebRTCViewController.m */; };
+		4378AF2B25A58952006991F2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4378AF2925A58952006991F2 /* SceneDelegate.m */; };
+		43ACB1052588DB890074C5DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACB1042588DB890074C5DF /* AppDelegate.m */; };
+		43ACB10B2588DB890074C5DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACB10A2588DB890074C5DF /* ViewController.m */; };
+		43ACB10E2588DB890074C5DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43ACB10C2588DB890074C5DF /* Main.storyboard */; };
+		43ACB1102588DB8C0074C5DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43ACB10F2588DB8C0074C5DF /* Assets.xcassets */; };
+		43ACB1132588DB8C0074C5DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43ACB1112588DB8C0074C5DF /* LaunchScreen.storyboard */; };
+		43ACB1162588DB8C0074C5DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACB1152588DB8C0074C5DF /* main.m */; };
+		43ACB1202588DB8C0074C5DF /* OCCaptureDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACB11F2588DB8C0074C5DF /* OCCaptureDemoTests.m */; };
+		43ACB12B2588DB8C0074C5DF /* OCCaptureDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACB12A2588DB8C0074C5DF /* OCCaptureDemoUITests.m */; };
+		43C4835B25B6B2D900139837 /* POCDefaultShader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43C4834F25B6B2D900139837 /* POCDefaultShader.mm */; };
+		43C4835C25B6B2D900139837 /* RCVAIForwardVideoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C4835025B6B2D900139837 /* RCVAIForwardVideoSource.m */; };
+		43C4835D25B6B2D900139837 /* POCEAGLVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C4835225B6B2D900139837 /* POCEAGLVideoView.m */; };
+		43C4835E25B6B2D900139837 /* POCNV12TextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C4835325B6B2D900139837 /* POCNV12TextureCache.m */; };
+		43C4835F25B6B2D900139837 /* RCVProcessBufferManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C4835925B6B2D900139837 /* RCVProcessBufferManager.m */; };
+		43C4836425B6B65900139837 /* RTCDisplayLinkTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C4836325B6B65900139837 /* RTCDisplayLinkTimer.m */; };
+		43DDB09225C8E42C00BF3D25 /* SelfPreviewBeautySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDB09025C8E42C00BF3D25 /* SelfPreviewBeautySelectionView.swift */; };
+		43DDB09325C8E42C00BF3D25 /* SelfPreviewBeautyEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDB09125C8E42C00BF3D25 /* SelfPreviewBeautyEditView.swift */; };
+		43DDB09C25C8E68200BF3D25 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDB09B25C8E68200BF3D25 /* UIView+Extensions.swift */; };
+		43DDB0A525C8E81B00BF3D25 /* RcvXVbgModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DDB0A425C8E81B00BF3D25 /* RcvXVbgModel.m */; };
+		43DDB0A925C8E95800BF3D25 /* BackgroundModel+BeautySelectionModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDB0A825C8E95800BF3D25 /* BackgroundModel+BeautySelectionModelProtocol.swift */; };
+		43DDB0DE25C8FB6E00BF3D25 /* vbg in Resources */ = {isa = PBXBuildFile; fileRef = 43DDB0DD25C8FB6E00BF3D25 /* vbg */; };
+		43DDB0E325C8FBA800BF3D25 /* RcvBanubaVbgController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DDB0E125C8FBA800BF3D25 /* RcvBanubaVbgController.m */; };
+		43DDB1F725CA444400BF3D25 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DDB1F625CA444400BF3D25 /* NSString+Extension.m */; };
+		64EFF663D7B94A4355D3311B /* Pods_OCCaptureDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E173D49BE1E4D66C8320E1 /* Pods_OCCaptureDemo.framework */; };
+		CEBEEB9D19D507DE3E4C8B88 /* Pods_OCCaptureDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5438B3B470E0F7777BF225 /* Pods_OCCaptureDemoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43ACB11C2588DB8C0074C5DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43ACB0F82588DB890074C5DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43ACB0FF2588DB890074C5DF;
+			remoteInfo = OCCaptureDemo;
+		};
+		43ACB1272588DB8C0074C5DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43ACB0F82588DB890074C5DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43ACB0FF2588DB890074C5DF;
+			remoteInfo = OCCaptureDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		433BA7C5259B10370078212E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				433BA7C4259B10370078212E /* BanubaEffectPlayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		193F41FBF854CE73AD9CC07E /* Pods-OCCaptureDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCaptureDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-OCCaptureDemoUITests/Pods-OCCaptureDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		28E173D49BE1E4D66C8320E1 /* Pods_OCCaptureDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCCaptureDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		433BA7A9259B0FD20078212E /* effects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = effects; sourceTree = "<group>"; };
+		433BA7B9259B10250078212E /* BanubaEffectPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BanubaEffectPlayer.framework; sourceTree = "<group>"; };
+		433BA7C8259B117A0078212E /* OCCaptureDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCCaptureDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		433BA7C9259B117A0078212E /* OCCaptureDemoTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCCaptureDemoTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		433BA7CA259B117A0078212E /* OCCaptureDemoUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCCaptureDemoUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		433BA9DF259C08F60078212E /* WebRTCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebRTCViewController.h; sourceTree = "<group>"; };
+		433BA9E0259C08F60078212E /* WebRTCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebRTCViewController.m; sourceTree = "<group>"; };
+		4378AF2925A58952006991F2 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		4378AF2A25A58952006991F2 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		437DDA59259ACE780034CB69 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		43ACB1002588DB890074C5DF /* OCCaptureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCCaptureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43ACB1032588DB890074C5DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		43ACB1042588DB890074C5DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		43ACB1092588DB890074C5DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		43ACB10A2588DB890074C5DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		43ACB10D2588DB890074C5DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43ACB10F2588DB8C0074C5DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43ACB1122588DB8C0074C5DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43ACB1142588DB8C0074C5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43ACB1152588DB8C0074C5DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43ACB11B2588DB8C0074C5DF /* OCCaptureDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCCaptureDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43ACB11F2588DB8C0074C5DF /* OCCaptureDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCaptureDemoTests.m; sourceTree = "<group>"; };
+		43ACB1212588DB8C0074C5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43ACB1262588DB8C0074C5DF /* OCCaptureDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCCaptureDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43ACB12A2588DB8C0074C5DF /* OCCaptureDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCaptureDemoUITests.m; sourceTree = "<group>"; };
+		43ACB12C2588DB8C0074C5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43ACB14F2588E3AE0074C5DF /* BanubaEffectPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BanubaEffectPlayer.framework; sourceTree = "<group>"; };
+		43C4834F25B6B2D900139837 /* POCDefaultShader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POCDefaultShader.mm; sourceTree = "<group>"; };
+		43C4835025B6B2D900139837 /* RCVAIForwardVideoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCVAIForwardVideoSource.m; sourceTree = "<group>"; };
+		43C4835125B6B2D900139837 /* RCVProcessPixelBufferProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCVProcessPixelBufferProtocol.h; sourceTree = "<group>"; };
+		43C4835225B6B2D900139837 /* POCEAGLVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POCEAGLVideoView.m; sourceTree = "<group>"; };
+		43C4835325B6B2D900139837 /* POCNV12TextureCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POCNV12TextureCache.m; sourceTree = "<group>"; };
+		43C4835425B6B2D900139837 /* POCEAGLVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POCEAGLVideoView.h; sourceTree = "<group>"; };
+		43C4835525B6B2D900139837 /* POCDefaultShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POCDefaultShader.h; sourceTree = "<group>"; };
+		43C4835625B6B2D900139837 /* RCVAIForwardVideoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCVAIForwardVideoSource.h; sourceTree = "<group>"; };
+		43C4835725B6B2D900139837 /* POCNV12TextureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POCNV12TextureCache.h; sourceTree = "<group>"; };
+		43C4835825B6B2D900139837 /* POCVideoViewShading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POCVideoViewShading.h; sourceTree = "<group>"; };
+		43C4835925B6B2D900139837 /* RCVProcessBufferManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCVProcessBufferManager.m; sourceTree = "<group>"; };
+		43C4835A25B6B2D900139837 /* RCVProcessBufferManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCVProcessBufferManager.h; sourceTree = "<group>"; };
+		43C4836225B6B65900139837 /* RTCDisplayLinkTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCDisplayLinkTimer.h; sourceTree = "<group>"; };
+		43C4836325B6B65900139837 /* RTCDisplayLinkTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCDisplayLinkTimer.m; sourceTree = "<group>"; };
+		43C4837325B6C21500139837 /* RTCOpenGLDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCOpenGLDefines.h; sourceTree = "<group>"; };
+		43C4837425B6C22500139837 /* RTCShader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCShader.h; sourceTree = "<group>"; };
+		43DDB09025C8E42C00BF3D25 /* SelfPreviewBeautySelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfPreviewBeautySelectionView.swift; sourceTree = "<group>"; };
+		43DDB09125C8E42C00BF3D25 /* SelfPreviewBeautyEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfPreviewBeautyEditView.swift; sourceTree = "<group>"; };
+		43DDB09B25C8E68200BF3D25 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		43DDB0A325C8E81B00BF3D25 /* RcvXVbgModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RcvXVbgModel.h; sourceTree = "<group>"; };
+		43DDB0A425C8E81B00BF3D25 /* RcvXVbgModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RcvXVbgModel.m; sourceTree = "<group>"; };
+		43DDB0A825C8E95800BF3D25 /* BackgroundModel+BeautySelectionModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BackgroundModel+BeautySelectionModelProtocol.swift"; sourceTree = "<group>"; };
+		43DDB0DD25C8FB6E00BF3D25 /* vbg */ = {isa = PBXFileReference; lastKnownFileType = folder; path = vbg; sourceTree = "<group>"; };
+		43DDB0E125C8FBA800BF3D25 /* RcvBanubaVbgController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RcvBanubaVbgController.m; sourceTree = "<group>"; };
+		43DDB0E225C8FBA800BF3D25 /* RcvBanubaVbgController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RcvBanubaVbgController.h; sourceTree = "<group>"; };
+		43DDB1F525CA43BF00BF3D25 /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		43DDB1F625CA444400BF3D25 /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		6710644B6F88B55B7BF33A43 /* Pods-OCCaptureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCaptureDemo.release.xcconfig"; path = "Target Support Files/Pods-OCCaptureDemo/Pods-OCCaptureDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6E940F26E34F0078030D2517 /* Pods-OCCaptureDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCaptureDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-OCCaptureDemoTests/Pods-OCCaptureDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FD7FE8BC60DD2241E6D99F8 /* Pods-OCCaptureDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCaptureDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-OCCaptureDemoUITests/Pods-OCCaptureDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8C9A7F59DC3377F70EF9EB14 /* Pods_OCCaptureDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCCaptureDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5438B3B470E0F7777BF225 /* Pods_OCCaptureDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCCaptureDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8F35164B818B5373D0FD96 /* Pods-OCCaptureDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCaptureDemoTests.release.xcconfig"; path = "Target Support Files/Pods-OCCaptureDemoTests/Pods-OCCaptureDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F6E43EBC26C35B67D2F12BF6 /* Pods-OCCaptureDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCaptureDemo.debug.xcconfig"; path = "Target Support Files/Pods-OCCaptureDemo/Pods-OCCaptureDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43ACB0FD2588DB890074C5DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433BA7C3259B10370078212E /* BanubaEffectPlayer.framework in Frameworks */,
+				64EFF663D7B94A4355D3311B /* Pods_OCCaptureDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43ACB1182588DB8C0074C5DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433BA7BB259B10250078212E /* BanubaEffectPlayer.framework in Frameworks */,
+				CEBEEB9D19D507DE3E4C8B88 /* Pods_OCCaptureDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43ACB1232588DB8C0074C5DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433BA7BC259B10250078212E /* BanubaEffectPlayer.framework in Frameworks */,
+				31B78F987BF2711017B7DCD9 /* Pods_OCCaptureDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		077EBAD029F099BA448B8DF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6E43EBC26C35B67D2F12BF6 /* Pods-OCCaptureDemo.debug.xcconfig */,
+				6710644B6F88B55B7BF33A43 /* Pods-OCCaptureDemo.release.xcconfig */,
+				6E940F26E34F0078030D2517 /* Pods-OCCaptureDemoTests.debug.xcconfig */,
+				EF8F35164B818B5373D0FD96 /* Pods-OCCaptureDemoTests.release.xcconfig */,
+				193F41FBF854CE73AD9CC07E /* Pods-OCCaptureDemoUITests.debug.xcconfig */,
+				7FD7FE8BC60DD2241E6D99F8 /* Pods-OCCaptureDemoUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		43ACB0F72588DB890074C5DF = {
+			isa = PBXGroup;
+			children = (
+				433BA7B9259B10250078212E /* BanubaEffectPlayer.framework */,
+				43ACB1022588DB890074C5DF /* OCCaptureDemo */,
+				43ACB11E2588DB8C0074C5DF /* OCCaptureDemoTests */,
+				43ACB1292588DB8C0074C5DF /* OCCaptureDemoUITests */,
+				43ACB1012588DB890074C5DF /* Products */,
+				43ACB13E2588E3090074C5DF /* Frameworks */,
+				077EBAD029F099BA448B8DF5 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		43ACB1012588DB890074C5DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43ACB1002588DB890074C5DF /* OCCaptureDemo.app */,
+				43ACB11B2588DB8C0074C5DF /* OCCaptureDemoTests.xctest */,
+				43ACB1262588DB8C0074C5DF /* OCCaptureDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43ACB1022588DB890074C5DF /* OCCaptureDemo */ = {
+			isa = PBXGroup;
+			children = (
+				43DDB0C625C8FB2200BF3D25 /* Resources */,
+				43DDB09A25C8E66400BF3D25 /* Common */,
+				43C4834E25B6B2AF00139837 /* WebRTC */,
+				4378AF2A25A58952006991F2 /* SceneDelegate.h */,
+				4378AF2925A58952006991F2 /* SceneDelegate.m */,
+				43ACB1032588DB890074C5DF /* AppDelegate.h */,
+				43ACB1042588DB890074C5DF /* AppDelegate.m */,
+				43ACB1092588DB890074C5DF /* ViewController.h */,
+				43DDB0E225C8FBA800BF3D25 /* RcvBanubaVbgController.h */,
+				43DDB0E125C8FBA800BF3D25 /* RcvBanubaVbgController.m */,
+				43DDB09125C8E42C00BF3D25 /* SelfPreviewBeautyEditView.swift */,
+				43DDB09025C8E42C00BF3D25 /* SelfPreviewBeautySelectionView.swift */,
+				43DDB0A825C8E95800BF3D25 /* BackgroundModel+BeautySelectionModelProtocol.swift */,
+				43ACB10A2588DB890074C5DF /* ViewController.m */,
+				43ACB10C2588DB890074C5DF /* Main.storyboard */,
+				43ACB10F2588DB8C0074C5DF /* Assets.xcassets */,
+				43ACB1112588DB8C0074C5DF /* LaunchScreen.storyboard */,
+				43ACB1142588DB8C0074C5DF /* Info.plist */,
+				43ACB1152588DB8C0074C5DF /* main.m */,
+				433BA7C8259B117A0078212E /* OCCaptureDemo-Bridging-Header.h */,
+				433BA7C9259B117A0078212E /* OCCaptureDemoTests-Bridging-Header.h */,
+				433BA7CA259B117A0078212E /* OCCaptureDemoUITests-Bridging-Header.h */,
+				43DDB0A325C8E81B00BF3D25 /* RcvXVbgModel.h */,
+				43DDB0A425C8E81B00BF3D25 /* RcvXVbgModel.m */,
+			);
+			path = OCCaptureDemo;
+			sourceTree = "<group>";
+		};
+		43ACB11E2588DB8C0074C5DF /* OCCaptureDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				43ACB11F2588DB8C0074C5DF /* OCCaptureDemoTests.m */,
+				43ACB1212588DB8C0074C5DF /* Info.plist */,
+			);
+			path = OCCaptureDemoTests;
+			sourceTree = "<group>";
+		};
+		43ACB1292588DB8C0074C5DF /* OCCaptureDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43ACB12A2588DB8C0074C5DF /* OCCaptureDemoUITests.m */,
+				43ACB12C2588DB8C0074C5DF /* Info.plist */,
+			);
+			path = OCCaptureDemoUITests;
+			sourceTree = "<group>";
+		};
+		43ACB13E2588E3090074C5DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				437DDA59259ACE780034CB69 /* OpenGLES.framework */,
+				43ACB14F2588E3AE0074C5DF /* BanubaEffectPlayer.framework */,
+				28E173D49BE1E4D66C8320E1 /* Pods_OCCaptureDemo.framework */,
+				AA5438B3B470E0F7777BF225 /* Pods_OCCaptureDemoTests.framework */,
+				8C9A7F59DC3377F70EF9EB14 /* Pods_OCCaptureDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43C4834E25B6B2AF00139837 /* WebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				43C4835525B6B2D900139837 /* POCDefaultShader.h */,
+				43C4834F25B6B2D900139837 /* POCDefaultShader.mm */,
+				43C4835425B6B2D900139837 /* POCEAGLVideoView.h */,
+				43C4835225B6B2D900139837 /* POCEAGLVideoView.m */,
+				43C4835725B6B2D900139837 /* POCNV12TextureCache.h */,
+				43C4835325B6B2D900139837 /* POCNV12TextureCache.m */,
+				43C4835825B6B2D900139837 /* POCVideoViewShading.h */,
+				43C4835625B6B2D900139837 /* RCVAIForwardVideoSource.h */,
+				43C4835025B6B2D900139837 /* RCVAIForwardVideoSource.m */,
+				43C4835A25B6B2D900139837 /* RCVProcessBufferManager.h */,
+				43C4835925B6B2D900139837 /* RCVProcessBufferManager.m */,
+				43C4835125B6B2D900139837 /* RCVProcessPixelBufferProtocol.h */,
+				433BA9DF259C08F60078212E /* WebRTCViewController.h */,
+				433BA9E0259C08F60078212E /* WebRTCViewController.m */,
+				43C4836225B6B65900139837 /* RTCDisplayLinkTimer.h */,
+				43C4836325B6B65900139837 /* RTCDisplayLinkTimer.m */,
+				43C4837325B6C21500139837 /* RTCOpenGLDefines.h */,
+				43C4837425B6C22500139837 /* RTCShader.h */,
+			);
+			path = WebRTC;
+			sourceTree = "<group>";
+		};
+		43DDB09A25C8E66400BF3D25 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				43DDB09B25C8E68200BF3D25 /* UIView+Extensions.swift */,
+				43DDB1F525CA43BF00BF3D25 /* NSString+Extension.h */,
+				43DDB1F625CA444400BF3D25 /* NSString+Extension.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		43DDB0C625C8FB2200BF3D25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				433BA7A9259B0FD20078212E /* effects */,
+				43DDB0DD25C8FB6E00BF3D25 /* vbg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43ACB0FF2588DB890074C5DF /* OCCaptureDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43ACB12F2588DB8C0074C5DF /* Build configuration list for PBXNativeTarget "OCCaptureDemo" */;
+			buildPhases = (
+				412AB7BDAB9373C9CE08D773 /* [CP] Check Pods Manifest.lock */,
+				43ACB0FC2588DB890074C5DF /* Sources */,
+				43ACB0FD2588DB890074C5DF /* Frameworks */,
+				43ACB0FE2588DB890074C5DF /* Resources */,
+				433BA7C5259B10370078212E /* Embed Frameworks */,
+				D9A38E1E17E6F80E914F648D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCCaptureDemo;
+			productName = OCCaptureDemo;
+			productReference = 43ACB1002588DB890074C5DF /* OCCaptureDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43ACB11A2588DB8C0074C5DF /* OCCaptureDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43ACB1322588DB8C0074C5DF /* Build configuration list for PBXNativeTarget "OCCaptureDemoTests" */;
+			buildPhases = (
+				77D45C1BC374065ADD65D4F5 /* [CP] Check Pods Manifest.lock */,
+				43ACB1172588DB8C0074C5DF /* Sources */,
+				43ACB1182588DB8C0074C5DF /* Frameworks */,
+				43ACB1192588DB8C0074C5DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43ACB11D2588DB8C0074C5DF /* PBXTargetDependency */,
+			);
+			name = OCCaptureDemoTests;
+			productName = OCCaptureDemoTests;
+			productReference = 43ACB11B2588DB8C0074C5DF /* OCCaptureDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43ACB1252588DB8C0074C5DF /* OCCaptureDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43ACB1352588DB8C0074C5DF /* Build configuration list for PBXNativeTarget "OCCaptureDemoUITests" */;
+			buildPhases = (
+				F5761C60B0AA9F36A49239D1 /* [CP] Check Pods Manifest.lock */,
+				43ACB1222588DB8C0074C5DF /* Sources */,
+				43ACB1232588DB8C0074C5DF /* Frameworks */,
+				43ACB1242588DB8C0074C5DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43ACB1282588DB8C0074C5DF /* PBXTargetDependency */,
+			);
+			name = OCCaptureDemoUITests;
+			productName = OCCaptureDemoUITests;
+			productReference = 43ACB1262588DB8C0074C5DF /* OCCaptureDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43ACB0F82588DB890074C5DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					43ACB0FF2588DB890074C5DF = {
+						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
+					};
+					43ACB11A2588DB8C0074C5DF = {
+						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
+						TestTargetID = 43ACB0FF2588DB890074C5DF;
+					};
+					43ACB1252588DB8C0074C5DF = {
+						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
+						TestTargetID = 43ACB0FF2588DB890074C5DF;
+					};
+				};
+			};
+			buildConfigurationList = 43ACB0FB2588DB890074C5DF /* Build configuration list for PBXProject "OCCaptureDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43ACB0F72588DB890074C5DF;
+			productRefGroup = 43ACB1012588DB890074C5DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43ACB0FF2588DB890074C5DF /* OCCaptureDemo */,
+				43ACB11A2588DB8C0074C5DF /* OCCaptureDemoTests */,
+				43ACB1252588DB8C0074C5DF /* OCCaptureDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43ACB0FE2588DB890074C5DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43DDB0DE25C8FB6E00BF3D25 /* vbg in Resources */,
+				43ACB1132588DB8C0074C5DF /* LaunchScreen.storyboard in Resources */,
+				43ACB1102588DB8C0074C5DF /* Assets.xcassets in Resources */,
+				43ACB10E2588DB890074C5DF /* Main.storyboard in Resources */,
+				433BA7AA259B0FD20078212E /* effects in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43ACB1192588DB8C0074C5DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433BA7AB259B0FD20078212E /* effects in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43ACB1242588DB8C0074C5DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433BA7AC259B0FD20078212E /* effects in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		412AB7BDAB9373C9CE08D773 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCCaptureDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77D45C1BC374065ADD65D4F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCCaptureDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9A38E1E17E6F80E914F648D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCCaptureDemo/Pods-OCCaptureDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCCaptureDemo/Pods-OCCaptureDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCCaptureDemo/Pods-OCCaptureDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5761C60B0AA9F36A49239D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCCaptureDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43ACB0FC2588DB890074C5DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43ACB10B2588DB890074C5DF /* ViewController.m in Sources */,
+				43C4836425B6B65900139837 /* RTCDisplayLinkTimer.m in Sources */,
+				433BA9E1259C08F60078212E /* WebRTCViewController.m in Sources */,
+				43DDB0A525C8E81B00BF3D25 /* RcvXVbgModel.m in Sources */,
+				43DDB09C25C8E68200BF3D25 /* UIView+Extensions.swift in Sources */,
+				43ACB1052588DB890074C5DF /* AppDelegate.m in Sources */,
+				4378AF2B25A58952006991F2 /* SceneDelegate.m in Sources */,
+				43DDB1F725CA444400BF3D25 /* NSString+Extension.m in Sources */,
+				43C4835C25B6B2D900139837 /* RCVAIForwardVideoSource.m in Sources */,
+				43DDB09325C8E42C00BF3D25 /* SelfPreviewBeautyEditView.swift in Sources */,
+				43DDB09225C8E42C00BF3D25 /* SelfPreviewBeautySelectionView.swift in Sources */,
+				43ACB1162588DB8C0074C5DF /* main.m in Sources */,
+				43C4835B25B6B2D900139837 /* POCDefaultShader.mm in Sources */,
+				43DDB0A925C8E95800BF3D25 /* BackgroundModel+BeautySelectionModelProtocol.swift in Sources */,
+				43DDB0E325C8FBA800BF3D25 /* RcvBanubaVbgController.m in Sources */,
+				43C4835D25B6B2D900139837 /* POCEAGLVideoView.m in Sources */,
+				43C4835F25B6B2D900139837 /* RCVProcessBufferManager.m in Sources */,
+				43C4835E25B6B2D900139837 /* POCNV12TextureCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43ACB1172588DB8C0074C5DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43ACB1202588DB8C0074C5DF /* OCCaptureDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43ACB1222588DB8C0074C5DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43ACB12B2588DB8C0074C5DF /* OCCaptureDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43ACB11D2588DB8C0074C5DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43ACB0FF2588DB890074C5DF /* OCCaptureDemo */;
+			targetProxy = 43ACB11C2588DB8C0074C5DF /* PBXContainerItemProxy */;
+		};
+		43ACB1282588DB8C0074C5DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43ACB0FF2588DB890074C5DF /* OCCaptureDemo */;
+			targetProxy = 43ACB1272588DB8C0074C5DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43ACB10C2588DB890074C5DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43ACB10D2588DB890074C5DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43ACB1112588DB8C0074C5DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43ACB1122588DB8C0074C5DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43ACB12D2588DB8C0074C5DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		43ACB12E2588DB8C0074C5DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43ACB1302588DB8C0074C5DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E43EBC26C35B67D2F12BF6 /* Pods-OCCaptureDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M932RC5J66;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = OCCaptureDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Banuba.OffscreenTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCCaptureDemo/OCCaptureDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		43ACB1312588DB8C0074C5DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6710644B6F88B55B7BF33A43 /* Pods-OCCaptureDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M932RC5J66;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = OCCaptureDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Banuba.OffscreenTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCCaptureDemo/OCCaptureDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		43ACB1332588DB8C0074C5DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E940F26E34F0078030D2517 /* Pods-OCCaptureDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J5NZUFGLBJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OCCaptureDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.piaojin.demo.OCCaptureDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCCaptureDemo/OCCaptureDemoTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCCaptureDemo.app/OCCaptureDemo";
+			};
+			name = Debug;
+		};
+		43ACB1342588DB8C0074C5DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF8F35164B818B5373D0FD96 /* Pods-OCCaptureDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J5NZUFGLBJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OCCaptureDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.piaojin.demo.OCCaptureDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCCaptureDemo/OCCaptureDemoTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCCaptureDemo.app/OCCaptureDemo";
+			};
+			name = Release;
+		};
+		43ACB1362588DB8C0074C5DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 193F41FBF854CE73AD9CC07E /* Pods-OCCaptureDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J5NZUFGLBJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OCCaptureDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.piaojin.demo.OCCaptureDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCCaptureDemo/OCCaptureDemoUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OCCaptureDemo;
+			};
+			name = Debug;
+		};
+		43ACB1372588DB8C0074C5DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD7FE8BC60DD2241E6D99F8 /* Pods-OCCaptureDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J5NZUFGLBJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OCCaptureDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.piaojin.demo.OCCaptureDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCCaptureDemo/OCCaptureDemoUITests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OCCaptureDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43ACB0FB2588DB890074C5DF /* Build configuration list for PBXProject "OCCaptureDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43ACB12D2588DB8C0074C5DF /* Debug */,
+				43ACB12E2588DB8C0074C5DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43ACB12F2588DB8C0074C5DF /* Build configuration list for PBXNativeTarget "OCCaptureDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43ACB1302588DB8C0074C5DF /* Debug */,
+				43ACB1312588DB8C0074C5DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43ACB1322588DB8C0074C5DF /* Build configuration list for PBXNativeTarget "OCCaptureDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43ACB1332588DB8C0074C5DF /* Debug */,
+				43ACB1342588DB8C0074C5DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43ACB1352588DB8C0074C5DF /* Build configuration list for PBXNativeTarget "OCCaptureDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43ACB1362588DB8C0074C5DF /* Debug */,
+				43ACB1372588DB8C0074C5DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43ACB0F82588DB890074C5DF /* Project object */;
+}
