@@ -36,11 +36,6 @@
     NSLog(@" ~RcvBanubaVbgController dealloc");
 }
 
-// should be called in VBG queue
-- (void)initComponents {
-    
-}
-
 - (BNBOffscreenEffectPlayer *)effectPlayer {
     return [RCVProcessBufferManager sharedManager].effectPlayer;
 }
@@ -94,18 +89,11 @@
     });
 }
 
-- (void)setEffect:(nonnull NSString *)name completion:(BNBOEPVoidBlock _Nonnull)completion {
+- (void)setEffect:(nonnull NSString *)name completion:(SetEffectsCompletion _Nonnull)completion {
     if ([self.effectName isEqualToString:name]) {
         [RCVProcessBufferManager sharedManager].shouldProcessFrameBuffer = ![NSString isBlankString: name];
         return;
     }
-    
-//    [RCVProcessBufferManager sharedManager].isUsingTransparency = [name isEqualToString:@"Transparency"];
-//    if ([self.effectName isEqualToString:@"Blur"]) {
-//        [RcvBanubaVbgController.sharedInstance enableBlurBackground:NO];
-//    } else if ([self.effectName isEqualToString:@"Beauty"]) {
-//        [RcvBanubaVbgController.sharedInstance enableVirtualBackground:NO];
-//    }
     
     [self destroyEffectPlayer];
     

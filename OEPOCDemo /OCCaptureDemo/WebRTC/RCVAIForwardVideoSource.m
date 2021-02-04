@@ -107,6 +107,7 @@
             }
         }
     } else {
+        RTCCVPixelBuffer *buffer = (RTCCVPixelBuffer *)frame.buffer;
         [self.forWardTarget capturer:capturer didCaptureVideoFrame:frame];
     }
 }

@@ -41,9 +41,9 @@ function Effect()
 
         // initBlurBackground("true");
         // deleteBlurBackground("true");
-        
-         initBackground("true");
-         setBackgroundTexture("rcv_bg_1.jpg");
+
+        // initBackground("true");
+        // setBackgroundTexture("bg_alarm_tile.png");
         // deleteBackground("true");
     };
 
@@ -138,7 +138,8 @@ function setBackgroundTexture(textureName) {
 }
 
 function rotateBg(angle) {
-    effectData.bgState.currAngle += angle;
+    Api.print("rotateBg - current bg angle is - " + angle);
+    effectData.bgState.currAngle = angle;
     setBgRotation(effectData.bgState.currAngle);
 }
 

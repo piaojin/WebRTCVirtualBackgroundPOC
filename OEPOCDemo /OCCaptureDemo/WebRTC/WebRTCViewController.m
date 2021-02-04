@@ -66,8 +66,6 @@ typedef NS_ENUM(NSInteger, RcvCaptureFrame) {
         
     }];
     
-//    [RcvBanubaVbgController.sharedInstance setEffect:@"Transparency"];
-    
     [self loadEffectModels];
 }
 
@@ -78,6 +76,7 @@ typedef NS_ENUM(NSInteger, RcvCaptureFrame) {
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     self.rtcEAGLVideoView.frame = self.view.bounds;
+    self.rtcTransparencyVideoView.frame = self.view.bounds;
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -162,6 +161,7 @@ typedef NS_ENUM(NSInteger, RcvCaptureFrame) {
 - (RTCCameraVideoCapturer *) cameraVideoCapturer {
     if (!_cameraVideoCapturer) {
         _cameraVideoCapturer = [[RTCCameraVideoCapturer alloc] initWithDelegate:self.forWardVideoSource];
+        [_cameraVideoCapturer captureSession].sessionPreset = AVCaptureSessionPresetiFrame960x540;
     }
     return _cameraVideoCapturer;
 }
@@ -169,7 +169,6 @@ typedef NS_ENUM(NSInteger, RcvCaptureFrame) {
 - (UIView <RTCVideoRenderer> *) rtcEAGLVideoView {
     if (!_rtcEAGLVideoView) {
         _rtcEAGLVideoView = [[RTCEAGLVideoView alloc] init];
-        [_rtcEAGLVideoView setHidden:YES];
     }
     return _rtcEAGLVideoView;
 }
@@ -233,7 +232,7 @@ typedef NS_ENUM(NSInteger, RcvCaptureFrame) {
 
 - (void)dealloc {
     [_cameraVideoCapturer stopCapture];
-//    [[RcvBanubaVbgController sharedInstance] destroyEffectPlayer];
+    [[RcvBanubaVbgController sharedInstance] destroyEffectPlayer];
 }
 
 #pragma Mark - SelfPreviewBeautyEditViewDelegate
@@ -243,36 +242,38 @@ typedef NS_ENUM(NSInteger, RcvCaptureFrame) {
 }
 
 - (void)editView:(SelfPreviewBeautyEditView * _Nonnull)editView didSelectBackgroundAt:(NSIndexPath * _Nonnull)indexPath {
-    RcvXVbgModel *model = self.effects[indexPath.row];
+    __block RcvXVbgModel *model = self.effects[indexPath.row];
     
     BOOL isUsingTransparency = [model.effectName isEqualToString:@"Transparency"];
     [self.rtcTransparencyVideoView setHidden:!isUsingTransparency];
     [self.rtcEAGLVideoView setHidden:isUsingTransparency];
     
     if (isUsingTransparency) {
-        [self.rtcTrack removeRenderer:self.rtcEAGLVideoView];
         [self.rtcTrack addRenderer:self.rtcTransparencyVideoView];
+        [self.rtcTrack removeRenderer:self.rtcEAGLVideoView];
     } else {
-        [self.rtcTrack removeRenderer:self.rtcTransparencyVideoView];
         [self.rtcTrack addRenderer:self.rtcEAGLVideoView];
+        [self.rtcTrack removeRenderer:self.rtcTransparencyVideoView];
     }
     
     switch (model.type) {
         case RcvVbgBackgroundTypeEFFECT:
-            [RcvBanubaVbgController.sharedInstance setEffect:model.effectName];
+            [RcvBanubaVbgController.sharedInstance setEffect:model.effectName completion:^{
+                
+            }];
             break;
         case RcvVbgBackgroundTypeDEFAULT:
-            [RcvBanubaVbgController.sharedInstance setEffect:model.effectName];
-            [RcvBanubaVbgController.sharedInstance setVirtualBackground:[NSString stringWithFormat:@"/%@", model.imagePath]];
+            [RcvBanubaVbgController.sharedInstance setEffect:model.effectName completion:^{
+                [RcvBanubaVbgController.sharedInstance setVirtualBackground:model.imagePath];
+            }];
             break;
         case RcvVbgBackgroundTypeNONE:
-//            [RcvBanubaVbgController.sharedInstance enableVirtualBackground:NO];
-//            [RcvBanubaVbgController.sharedInstance enableBlurBackground:NO];
             [RcvBanubaVbgController.sharedInstance destroyEffectPlayer];
             break;
         case RcvVbgBackgroundTypeCUSTOM:
-            [RcvBanubaVbgController.sharedInstance setEffect:model.effectName];
-            [RcvBanubaVbgController.sharedInstance setVirtualBackground:model.imagePath];
+            [RcvBanubaVbgController.sharedInstance setEffect:model.effectName completion:^{
+                [RcvBanubaVbgController.sharedInstance setVirtualBackground:model.imagePath];
+            }];
             break;
             
         case RcvVbgBackgroundTypeMORE:

@@ -12,6 +12,7 @@
 @class RcvXVbgModel;
 
 typedef void(^LoadEffectsCompletion)(NSArray<RcvXVbgModel *> *_Nonnull);
+typedef void(^SetEffectsCompletion)(void);
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -25,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSArray<RcvXVbgModel *> *_Nonnull)loadEffects;
 
-- (void)setEffect:(nonnull NSString *)name;
+- (void)setEffect:(nonnull NSString *)name completion:(SetEffectsCompletion _Nonnull)completion;
 
 - (BOOL)isUsingTransparency;
 
