@@ -2,7 +2,7 @@
 //  RcvBanubaVbgController.h
 //  rcv
 //
-//  Created by Jackie Ou on 2020/7/21.
+//  Created by piaojin on 2020/7/21.
 //  Copyright © 2020 RingCentral. All rights reserved.
 //
 

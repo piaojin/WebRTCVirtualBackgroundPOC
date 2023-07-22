@@ -2,7 +2,7 @@
 //  RcvBanubaVbgController.m
 //  rcv
 //
-//  Created by Jackie Ou on 2020/7/21.
+//  Created by piaojin on 2020/7/21.
 //  Copyright © 2020 RingCentral. All rights reserved.
 //
 
@@ -35,8 +35,13 @@
     NSLog(@" ~RcvBanubaVbgController dealloc");
 }
 
-- (BNBOffscreenEffectPlayer *)effectPlayer {
-    return [RCVProcessBufferManager sharedManager].effectPlayer;
+- (BNBOffscreenEffectPlayer * _Nullable)effectPlayer {
+    if (_effectPlayer == nil) {
+        BNBOffscreenEffectPlayer *player = [RCVProcessBufferManager sharedManager].effectPlayer;
+        __weak typeof(player)weakEffectPlayer  = player;
+        _effectPlayer = weakEffectPlayer;
+    }
+    return _effectPlayer;
 }
 
 - (NSArray<RcvXVbgModel *> *_Nonnull)loadEffects {
@@ -50,16 +55,19 @@
         NSString *path = [effectsURL.absoluteString stringByReplacingOccurrencesOfString:@"file:///" withString:@""];
         NSError *error;
         NSArray<NSString *> *dirPaths = [NSFileManager.defaultManager contentsOfDirectoryAtPath:path error:&error];
-        
+
         for (NSString *effectName in dirPaths) {
             // Will use effect `Beauty` when select custome or default vbg image. So ignore `Beauty` here.
-            if (![effectName isEqualToString:@"Beauty"]) {
+            // This POC is only for virtual background so only add "Transparency" effect here.
+            if ([effectName isEqualToString:@"Transparency"]) {
                 RcvXVbgModel *model = [[RcvXVbgModel alloc] initWithType:RcvVbgBackgroundTypeEFFECT effectName:effectName thumbnailPath:@"" imagePath:@""];
                 [effects addObject:model];
             }
         }
     }
-    
+
+    /// This POC is only for virtual background so no need to add other type of effects.
+    /*
     // Load vbg images from Resourc/vbg/images/
     NSURL *vbgURL = [NSBundle.mainBundle URLForResource:@"vbg/images" withExtension:nil];
     if (vbgURL.absoluteString) {
@@ -77,6 +85,7 @@
 
     RcvXVbgModel *moreModel = [[RcvXVbgModel alloc] initWithType:RcvVbgBackgroundTypeMORE effectName: @"" thumbnailPath:@"" imagePath:@""];
     [effects addObject:moreModel];
+    */
     return effects;
 }
 
@@ -191,7 +200,7 @@
 
 - (void)destroyEffectPlayer {
     [[RCVProcessBufferManager sharedManager] resetProcesser];
-    self.effectPlayer = nil;
+    self.effectName = nil;
 }
 
 @end

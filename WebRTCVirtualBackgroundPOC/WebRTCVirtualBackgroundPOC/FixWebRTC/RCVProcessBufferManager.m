@@ -64,7 +64,7 @@
     imageFormat.resultedImageOrientation = EPOrientationAngles90;
     imageFormat.faceOrientation = 0;
     imageFormat.needAlphaInOutput = RCVProcessBufferManager.sharedManager.isUsingTransparency;
-    imageFormat.isMirrored = YES;
+    imageFormat.isMirrored = NO;
     imageFormat.isYFlip = NO;
     
     // NOTE: the processY method will return object with CF_RETURNS_RETAINED, so need to release the object out side.

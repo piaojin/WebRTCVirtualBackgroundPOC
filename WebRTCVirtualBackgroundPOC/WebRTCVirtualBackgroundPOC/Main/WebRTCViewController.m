@@ -107,7 +107,7 @@ typedef NS_ENUM(NSInteger, RcvCaptureFrame) {
             return device;
         }
     }
-    return captureDevices[0];
+    return [captureDevices firstObject];
 }
 
 - (AVCaptureDeviceFormat *)selectFormatForDevice:(AVCaptureDevice *)device {

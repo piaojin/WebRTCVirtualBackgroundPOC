@@ -34,7 +34,7 @@ static const char kNV12FragmentShaderSource[] =
   "    " FRAGMENT_SHADER_COLOR " = " FRAGMENT_SHADER_TEXTURE "(s_textureY, v_texcoord);\n"
   "  }\n";
 
-// 原始片段着色器
+/// 原始片段着色器, 原始片段着色器不支持透明背景,所以需要修改着色器.
 //static const char kNV12FragmentShaderSource[] =
 //  SHADER_VERSION
 //  "precision mediump float;"
